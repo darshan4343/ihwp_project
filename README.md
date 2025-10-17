@@ -1,20 +1,20 @@
-# 🪷 Indian Health, Wellness & Psychology
+#  Indian Health, Wellness & Psychology
 
-## 📖 Description
+## Description
 
 **Indian Health, Wellness & Psychology** is a simple, responsive web project designed to promote physical fitness, balanced nutrition, and mental well-being.
 
-### ✨ Features
-- 🩺 **Daily Health Tips** (dynamically generated)  
-- 🥗 **Nutrition Guidelines** based on Indian dietary habits  
-- 🧘 **Mental Wellness Advice** with practical self-care methods  
-- 🧩 **Interactive Wellness Quiz** that provides personalized lifestyle recommendations  
+### Features
+- **Daily Health Tips** (dynamically generated)  
+- **Nutrition Guidelines** based on Indian dietary habits  
+- **Mental Wellness Advice** with practical self-care methods  
+- **Interactive Wellness Quiz** that provides personalized lifestyle recommendations  
 
 This project combines clean, semantic **HTML5**, modern **CSS3**, and **JavaScript** interactivity to create an elegant and user-friendly wellness portal.
 
 ---
 
-## ⚙️ Installation Steps
+## Installation Steps
 
 1. **Download or clone this repository:**
    ```bash
@@ -37,18 +37,18 @@ This project combines clean, semantic **HTML5**, modern **CSS3**, and **JavaScri
 
 ---
 
-## ▶️ How to Run the Project
+## How to Run the Project
 
 1. Open the project folder.  
 2. Double-click **`index.html`** to open it in your default browser.  
 3. Explore the following:
-   - 🩵 **Daily Health Tips** (auto-loaded from `script.js`)  
-   - 🌿 **Nutrition & Mental Wellness** advice  
-   - 💫 **Interactive Quiz** — select answers to get instant personalized feedback  
+   - **Daily Health Tips** (auto-loaded from `script.js`)  
+   - **Nutrition & Mental Wellness** advice  
+   - **Interactive Quiz** — select answers to get instant personalized feedback  
 
 ---
 
-## 💡 Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |-------------|----------|
@@ -59,16 +59,16 @@ This project combines clean, semantic **HTML5**, modern **CSS3**, and **JavaScri
 
 ---
 
-## 🧠 Future Enhancements (Optional Ideas)
+## Future Enhancements (Optional Ideas)
 
-- 🌙 Add a **Dark Mode Toggle**  
-- 🔄 Fetch **real-time health tips** from an external API  
-- 💾 Store **quiz results** in `localStorage`  
-- 🧘 Add a **Yoga/Meditation Section** with embedded videos  
+- Add a **Dark Mode Toggle**  
+- Fetch **real-time health tips** from an external API  
+- Store **quiz results** in `localStorage`  
+- Add a **Yoga/Meditation Section** with embedded videos  
 
 ---
 
-## 🪔 Author & Credits
+## Author & Credits
 
 Created with ❤️ for Indian wellness and mindfulness.  
 © 2025 **Indian Health, Wellness & Psychology** — All rights reserved.
