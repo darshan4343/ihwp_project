@@ -2,13 +2,13 @@
 
 ## Description
 
-**Indian Health, Wellness & Psychology** is a simple, responsive web project designed to promote physical fitness, balanced nutrition, and mental well-being.
+**The goal of the straightforward, responsive website Indian Health, Wellness & Psychology is to encourage mental health, balanced eating, and physical fitness.
 
 ### Features
 - **Daily Health Tips** (dynamically generated)  
-- **Nutrition Guidelines** based on Indian dietary habits  
-- **Mental Wellness Advice** with practical self-care methods  
-- **Interactive Wellness Quiz** that provides personalized lifestyle recommendations  
+- **Nutrition Guidelines** based on Indian dietary customs  
+- **Mental Wellness Advice** with useful self-care techniques  
+- **Interactive Wellness Quiz** that offers tailored lifestyle suggestions 
 
 This project combines clean, semantic **HTML5**, modern **CSS3**, and **JavaScript** interactivity to create an elegant and user-friendly wellness portal.
 
