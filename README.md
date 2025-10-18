@@ -68,4 +68,8 @@ This project combines clean, semantic **HTML5**, modern **CSS3**, and **JavaScri
 
 ---
 
+## 🪔 Author & Credits
+
+Created with ❤️ for Indian wellness and mindfulness.  
+© 2025 **Indian Health, Wellness & Psychology** — All rights reserved.
 
