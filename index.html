@@ -1,114 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your daily guide to Indian health, wellness, and psychology — promoting physical fitness, balanced nutrition, and mental well-being.">
-    <meta name="keywords" content="Indian health, wellness, psychology, mental health, fitness, nutrition, Ayurveda">
-    <meta name="author" content="Holistic Wellness Hub: Mind, Body & Soul">
-    <title>Holistic Wellness Hub: Mind, Body & Soul</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Holistic Wellness Hub — personalized daily tips, nutrition, mental wellness and interactive quiz." />
+  <title>Holistic Wellness Hub — Mind, Body & Soul</title>
 
-    
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    
-    <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  
+  <meta name="theme-color" content="#e67e22" />
 </head>
-
 <body>
-    <header class="site-header">
-        <div class="container">
-            <h1>Holistic Wellness Hub: Mind, Body & Soul</h1>
-            <p class="tagline">Your daily guide to physical and mental well-being</p>
+  <header class="site-header" role="banner">
+    <div class="header-inner container">
+      <div class="brand" aria-hidden="true">
+        <svg class="logo" width="44" height="44" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" fill="#e67e22" />
+          <path d="M8 12c1.2-2 4-3 6-2s3 3 2 5" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="title-block">
+        <h1 class="site-title">Holistic Wellness Hub</h1>
+        <p class="tagline">Practical wellness for mind, body & daily life</p>
+      </div>
+
+      <div class="header-actions">
+        <button id="toggle-theme" aria-pressed="false" title="Toggle dark mode" class="icon-btn" aria-label="Toggle dark mode">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero alt-bg">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h2>Small daily habits. Big improvements.</h2>
+          <p>Take our short wellness quiz for tailored advice on sleep, exercise, hydration, stress management and screen-time balance.</p>
+          <a href="#quiz" class="btn btn-primary">Take the Quiz →</a>
         </div>
-    </header>
 
-    <main>
-        
-        <section id="health-tips" class="section">
-            <div class="container">
-                <h2>Today's Health Tips</h2>
-                <ul id="tips-list" aria-live="polite">
-                    
-                </ul>
-            </div>
-        </section>
+        <aside class="card daily-card" aria-live="polite">
+          <h3>Today's Tip</h3>
+          <p id="daily-tip">Loading a fresh tip for you…</p>
+          <button id="new-tip" class="btn btn-ghost">New tip</button>
+        </aside>
+      </div>
+    </section>
 
-        
-        <section id="nutrition" class="section alt-bg">
-            <div class="container">
-                <h2>Nutrition Guidelines</h2>
-                <ul>
-                    <li>Include seasonal fruits and vegetables in your diet.</li>
-                    <li>Drink at least 2–3 liters of water daily.</li>
-                    <li>Prefer whole grains over refined grains.</li>
-                    <li>Include protein: lentils, beans, dairy, eggs, or lean meat.</li>
-                    <li>Limit sugar and fried foods.</li>
-                </ul>
-            </div>
-        </section>
+    <section id="features" class="container features">
+      <article class="feature-card">
+        <h3><i class="fa-solid fa-seedling"></i> Nutrition</h3>
+        <p>Seasonal foods, balanced plates, and easy Ayurvedic-inspired recipes to support digestion and energy.</p>
+      </article>
 
-        
-        <section id="mental-wellness" class="section">
-            <div class="container">
-                <h2>Mental Wellness Tips</h2>
-                <ul>
-                    <li>Meditate or practice deep breathing for 10 minutes daily.</li>
-                    <li>Maintain a gratitude journal to improve your mindset.</li>
-                    <li>Engage in regular physical activity to reduce stress.</li>
-                    <li>Talk to friends or family when feeling low.</li>
-                </ul>
-            </div>
-        </section>
+      <article class="feature-card">
+        <h3><i class="fa-solid fa-heart-pulse"></i> Movement</h3>
+        <p>Short routines (10–20 mins) for strength, mobility, and mood boosting—no equipment needed.</p>
+      </article>
 
-        
-        <section id="quiz" class="section alt-bg">
-            <div class="container">
-                <h2>Wellness Quiz</h2>
-                <p>Answer the following questions to get personalized wellness advice:</p>
-
-                <form id="quiz-form" aria-label="Wellness quiz">
-                    <div class="form-group">
-                        <label for="sleep">🛌 How many hours do you sleep daily?</label>
-                        <select id="sleep" name="sleep" required>
-                            <option value="">Select an option</option>
-                            <option value="less">Less than 6</option>
-                            <option value="normal">6–8</option>
-                            <option value="more">More than 8</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="exercise">🏋️ How often do you exercise?</label>
-                        <select id="exercise" name="exercise" required>
-                            <option value="">Select an option</option>
-                            <option value="none">Never</option>
-                            <option value="occasional">1–2 times/week</option>
-                            <option value="regular">3+ times/week</option>
-                        </select>
-                    </div>
-
-                    <button type="button" id="advice-btn" class="btn">Get Personalized Advice</button>
-                </form>
-
-                <p id="quiz-result" class="result" aria-live="polite"></p>
-            </div>
-        </section>
-    </main>
+      <article class="feature-card">
+        <h3><i class="fa-solid fa-brain"></i> Mental Wellness</h3>
+        <p>Breathing, sleep hygiene, and journaling prompts to reduce stress and cultivate focus.</p>
+      </article>
+    </section>
 
     
+    <section id="guides" class="container alt-bg section-block">
+      <h2>Quick Guides</h2>
+      <div class="guides-grid">
+        <div class="guide">
+          <h4>5-minute Breath Reset</h4>
+          <ol>
+            <li>Sit tall. Inhale 4s, hold 2s, exhale 6s. Repeat 6 times.</li>
+            <li>Notice body sensations. Let shoulders drop.</li>
+          </ol>
+        </div>
+
+        <div class="guide">
+          <h4>Hydration Habit</h4>
+          <p>Carry a 1-litre bottle, refill once mid-day. Aim for 2–3 L depending on activity & climate.</p>
+        </div>
+
+        <div class="guide">
+          <h4>Simple Balanced Plate</h4>
+          <p>Half veg, quarter protein (lentils/eggs), quarter whole grains—add a healthy fat and spices.</p>
+        </div>
+      </div>
+    </section>
 
     
-    <script src="script.js" defer></script>
-    <script>
+    <section id="quiz" class="container section-block">
+      <h2>Wellness Quiz — 2 minutes</h2>
+      <p class="muted">Choose the option that best matches your usual behavior. Results are instant and stored locally for convenience.</p>
+
+      <form id="quiz-form" class="quiz-form" aria-labelledby="quiz-heading" novalidate>
         
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('year').textContent = new Date().getFullYear();
-        });
-    </script>
+        <div class="progress">
+          <div id="progress-bar" class="progress-bar" style="width:0%"></div>
+        </div>
+
+        
+        <fieldset class="form-card">
+          <legend>1) On average, how many hours do you sleep per night?</legend>
+          <label><input type="radio" name="sleep" value="0" required> Less than 5</label>
+          <label><input type="radio" name="sleep" value="1"> 5–6 hrs</label>
+          <label><input type="radio" name="sleep" value="2"> 6–8 hrs</label>
+          <label><input type="radio" name="sleep" value="1"> More than 8</label>
+        </fieldset>
+
+        
+        <fieldset class="form-card">
+          <legend>2) How often do you exercise (any movement that raises heart rate)?</legend>
+          <label><input type="radio" name="exercise" value="0" required> Rarely / never</label>
+          <label><input type="radio" name="exercise" value="1"> 1–2 times/week</label>
+          <label><input type="radio" name="exercise" value="2"> 3–4 times/week</label>
+          <label><input type="radio" name="exercise" value="3"> 5+ times/week</label>
+        </fieldset>
+
+        
+        <fieldset class="form-card">
+          <legend>3) How would you describe your daily diet?</legend>
+          <label><input type="radio" name="diet" value="0" required> Mostly processed / fast food</label>
+          <label><input type="radio" name="diet" value="1"> Mixed — some fresh food, some processed</label>
+          <label><input type="radio" name="diet" value="2"> Mostly balanced (veg + protein + grains)</label>
+        </fieldset>
+
+        
+        <fieldset class="form-card">
+          <legend>4) How hydrated are you (approx. litres/day)?</legend>
+          <label><input type="radio" name="water" value="0" required> Less than 1 L</label>
+          <label><input type="radio" name="water" value="1"> 1–2 L</label>
+          <label><input type="radio" name="water" value="2"> 2–3 L</label>
+          <label><input type="radio" name="water" value="3"> 3+ L</label>
+        </fieldset>
+
+        
+        <fieldset class="form-card">
+          <legend>5) How often do you feel stressed or overwhelmed?</legend>
+          <label><input type="radio" name="stress" value="0" required> Almost daily</label>
+          <label><input type="radio" name="stress" value="1"> Several times/week</label>
+          <label><input type="radio" name="stress" value="2"> Occasionally</label>
+          <label><input type="radio" name="stress" value="3"> Rarely</label>
+        </fieldset>
+
+        
+        <fieldset class="form-card">
+          <legend>6) How many hours/day do you spend on screens (work + leisure)?</legend>
+          <label><input type="radio" name="screens" value="0" required> 10+ hrs</label>
+          <label><input type="radio" name="screens" value="1"> 6–10 hrs</label>
+          <label><input type="radio" name="screens" value="2"> 3–6 hrs</label>
+          <label><input type="radio" name="screens" value="3"> &lt; 3 hrs</label>
+        </fieldset>
+
+        <div class="quiz-actions">
+          <button type="button" id="get-advice" class="btn btn-primary">Get Personalized Advice</button>
+          <button type="button" id="reset-quiz" class="btn btn-ghost">Reset</button>
+        </div>
+
+        <div id="quiz-result" class="card result" aria-live="polite" hidden>
+          <h3 id="result-title">Your Wellness Snapshot</h3>
+          <div id="score-summary" class="score-summary"></div>
+          <div id="detailed-advice" class="advice"></div>
+          <div class="result-actions">
+            <button id="save-result" class="btn btn-ghost">Save locally</button>
+            <button id="share-result" class="btn btn-outline">Copy advice</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Holistic Wellness Hub</strong>
+          <p class="small-text">Supporting healthy habits — one step at a time.</p>
+        </div>
+
+        <div class="footer-links">
+          <p class="small-text">Made with care — <span id="year"></span></p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      const y = new Date().getFullYear();
+      document.getElementById('year').textContent = y;
+    });
+  </script>
 </body>
 </html>
