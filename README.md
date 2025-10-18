@@ -42,9 +42,9 @@ This project combines clean, semantic **HTML5**, modern **CSS3**, and **JavaScri
 1. Open the project folder.  
 2. Double-click **`index.html`** to open it in your default browser.  
 3. Explore the following:
-   - **Daily Health Tips** (auto-loaded from `script.js`)  
-   - **Nutrition & Mental Wellness** advice  
-   - **Interactive Quiz** — select answers to get instant personalized feedback  
+   - **Today's Tips** (auto-loaded from `script.js`)  
+   - **Nutrition, Movement & Mental Wellness** advice  
+   - **Wellness Quiz** — select answers to get instant personalized feedback  
 
 ---
 
