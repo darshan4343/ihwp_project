@@ -1,4 +1,4 @@
-#  Indian Health, Wellness & Psychology
+#  Holistic Wellness Hub
 
 ## Description
 
