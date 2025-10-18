@@ -2,7 +2,7 @@
 
 ## Description
 
-**The goal of the straightforward, responsive website Indian Health, Wellness & Psychology is to encourage mental health, balanced eating, and physical fitness.
+The goal of the straightforward, responsive website Indian Health, Wellness & Psychology is to encourage mental health, balanced eating, and physical fitness.
 
 ### Features
 - **Daily Health Tips** (dynamically generated)  
